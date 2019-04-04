@@ -21,7 +21,7 @@ def proxy():
         content = request.json
         url = content['url']
         password = content['password']
-        uri = 'trytoscanthispage' + url
+        uri = url + 'impossibleblameunicorn'
         headers = {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_4) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/12.1 Safari/605.1.15', 'Referer': 'https://google.com/'}
         try:
             headers = content['options']['headers']
