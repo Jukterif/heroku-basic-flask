@@ -27,7 +27,7 @@ def proxy():
             headers = content['options']['headers']
         except:
             pass
-        req_password = hashlib.sha1('test'.encode()).hexdigest()
+        req_password = hashlib.sha1(uri.encode()).hexdigest()
         if password == req_password:
             try:
                 html = get(url, headers=headers).text
